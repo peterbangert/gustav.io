@@ -80,7 +80,6 @@ a:hover{
 }
 
 nav {
-  background-color: #FFF;
 }
 
 nav li {
@@ -126,10 +125,11 @@ a {
 
 .gallery-item {
   margin: 20px;
+  max-width: 200px;
 }
 
 .gallery-item .thumbnail {
-  border: 5px solid #fff;
+  border: 5px solid white;
 }
 
 /* FOOTER NAVIGATION */
