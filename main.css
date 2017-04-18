@@ -121,7 +121,7 @@ a {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  max-width: 20%;
+  
 }
 
 .gallery-item {
