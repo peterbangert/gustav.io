@@ -6,7 +6,7 @@
       background:#ffffff; }
 body {
   margin: 0;
-  background: #000; 
+  background: PaleGoldenrod; 
 }
 video { 
     position: fixed;
@@ -98,7 +98,7 @@ body {
 }
 
 a {
-  color: #204156;
+  color: PaleGoldenrod;
   text-decoration: none;
 }
 
