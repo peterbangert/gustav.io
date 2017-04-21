@@ -117,7 +117,7 @@ a {
 .gallery {
   margin-top: 20px;
   flex-wrap: wrap;
-  display: flex;
+  display: block;
   justify-content: center;
   
 }
