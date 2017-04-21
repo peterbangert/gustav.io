@@ -60,6 +60,12 @@ h1 {
    background: rgba(0,0,0,0.5);
 }
 
+lefft_align {
+	text-align:left;
+	
+}
+
+
 a {
   display: inline-block;
   color: PaleGoldenrod;
@@ -136,8 +142,8 @@ body {margin:0;}
 }
 
 .topnav a.active {
-    background-color: #4CAF50;
-    color: PaleGoldenrod;
+    background-color: PaleGoldenrod;
+    color: white;
 }
 
 .gallery {
