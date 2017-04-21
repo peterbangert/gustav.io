@@ -130,7 +130,10 @@ a {
 .gallery-item .thumbnail {
   border: 5px solid white;
 }
-
+img{
+    width:100%;
+    max-width:200px;
+}
 /* FOOTER NAVIGATION */
 
 nav {
