@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-echo '<p>Hello World</p>';
+
+
 include("templates/header.html");   
 
 // Set the default name 
-$action = 'index'; 
+$action = 'home'; 
 // Specify some disallowed paths 
 $disallowed_paths = array('header', 'footer'); 
 if (!empty($_GET['action'])) { 
@@ -19,6 +20,8 @@ if (!empty($_GET['action'])) {
 include("templates/$action.html"); 
 
 include("templates/footer.html");
+
+echo '<p>Hello World</p>';
 ?>
 
 </HTML> 
