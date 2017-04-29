@@ -1,6 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
 <?php 
 
 
@@ -21,7 +19,4 @@ include("templates/$action.html");
 
 include("templates/footer.html");
 
-echo '<p>Hello World</p>';
 ?>
-
-</HTML> 
