@@ -1,189 +1,23 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php   
+include("templates/header.htm");   
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+// Set the default name 
+$action = 'index'; 
+// Specify some disallowed paths 
+$disallowed_paths = array('header', 'footer'); 
+if (!empty($_GET['action'])) { 
+    $tmp_action = basename($_GET['action']); 
+    // If it's not a disallowed path, and if the file exists, update $action 
+    if (!in_array($tmp_action, $disallowed_paths) && file_exists("templates/{$tmp_action}.htm")) 
+        $action = $tmp_action; 
+} 
+// Include $action 
+include("templates/$action.htm"); 
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
-<HEAD>
-	<TITLE>SchlachtHof Fünf</TITLE>
-	<link rel="stylesheet" type="text/css" href="main.css"/>
-</HEAD>
-
-<BODY BGCOLOR="FFFFFF">
-	<!-- This Script is from www.htmlfreecodes.com, Provided by: Mahmood Bina -->
-<script type='text/javascript' src='http://m.free-codes.org/gh.php?id=2001'></script>
-<SCRIPT language=JavaScript>
-var NS4 = (document.layers);    
-var IE4 = (document.all);
-var win = window;    
-var n   = 0;
-function findInPage(str) {
-  var txt, i, found;
-  if (str == "")
-    return false;
-  if (NS4) {
-    if (!win.find(str))
-      while(win.find(str, false, true))
-        n++;
-    else
-      n++;
-    if (n == 0)
-      alert("Not found.");
-  }
-  if (IE4) {
-    txt = win.document.body.createTextRange();
-    for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {
-      txt.moveStart("character", 1);
-      txt.moveEnd("textedit");
-    }
-    if (found) {
-      txt.moveStart("character", -1);
-      txt.findText(str);
-      txt.select();
-      txt.scrollIntoView();
-      n++;
-    }
-    else {
-      if (n > 0) {
-        n = 0;
-        findInPage(str);
-      }
-      else
-        alert("Sorry, we couldn't find.Try again");
-   }
-  }
-  return false;
-}
-</SCRIPT>
-
-<FORM name=search onsubmit="return findInPage(this.string.value);">
-<P align=center><FONT size=3>
-<INPUT 
-style="BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid" 
-onchange="n = 0;" size=16 name=string></FONT><BR><INPUT style="BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #aaaaaa" type=submit value=Search in page ><center><font size=2pt;><font family=Times New Roman;><b>
-
-
-	<CENTER><IMG SRC="main/pictures/IMG-20161104-WA0002.jpg" ALIGN="BOTTOM"> </CENTER>
-	<HR>
-	
-
-
-<div class="topnav">
-  <a class="active" href="#home" onclick="return btntest_onclick()">Home</a>
-  <a href="#news" onclick="return btntest_onclick()">News</a>
-  <a href="#contact" onclick="return btntest_onclick()">Contact</a>
-  <a href="#about" onclick="return btntest_onclick()">About</a>
-  <a href="http://bdsm.com" onclick="return btntest_onclick()">Click here</a>
-</div>
-
-
-<script language="javascript" type="text/javascript">
-function btntest_onclick(page) 
-{
-    window.location.href = "bootstrapversion.html";
-}
-</script>
-
-<div style="padding-left:16px">
-  
-	
-</div>
-</BODY>
-
-	<div class="left_align">
-	<H1><font color="PaleGoldenrod">SchlachtHof Fünf</font></H1>
-	<H2>	<font color="PaleGoldenrod">too lit fam</font></H2>
-
-	<P> 
-	<BR> <B><I><font color="PaleGoldenrod">Too Many ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) </I></B>
-	</HR>
-	
-	<script type="text/javascript">
-var nextVideo = "path/of/next/video.mp4";
-var videoPlayer = document.getElementById('bgvid');
-videoPlayer.onended = function(){
-    videoPlayer.src = nextVideo;
-}
-</script>
-
-	
-	<video id="bgvid" playsinline autoplay loop>
-		<source src="main/videos/grebz.mp4" type="video/mp4">
-	</video>
-	<HR>
-	<div id="Grebz">
-		<h1><font color="PaleGoldenrod">Grebz</font></h1>
-		
-	</div>
-	
-     </HR>
-	 <body>
-	 
-	 <HR>
-	
-	<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-	<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-	<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-	<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-	<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-	<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-	<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-	<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-	
-		<h1><font color="PaleGoldenrod">GALLERY</font></h1>
-		
-	</div>
-	 
-    <div class="gallery">
-	<figure class="gallery-item">
-        <img class="thumbnail" src="main/pictures/C99xEA7XsAAyf0c.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="main/pictures/KQwFoyl.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="main/pictures/Miami_Vice_Blues_Glass.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="main/pictures/1481118859283.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="main/pictures/570647a476e6a2d4eacdea02e19a07a3.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="main/pictures/TL9x.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="main/pictures/R-894048-1170187706.jpeg.jpg">
-      </figure>
-	  <figure class="gallery-item">
-        <img class="thumbnail" src="main/pictures/jpeg_glitch.jpg">
-      </figure>
-	  <p><font color="white">my instagram platform away from home</font> 
-    </div>
-
-      <nav>
-      <ul>
-        <li><a href="#"><b>Sitemap</b></a></li>
-        <li><a href="#">Impressum</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <div class="contact-btn"><a>Contact</a>
-      </div>
-    </nav>
-	 </body>
+include("templates/footer.htm");
+?>
 
 </HTML> 
