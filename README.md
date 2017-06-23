@@ -24,10 +24,8 @@ Die Funktion f : N2 →N sei deﬁniert als f(0,y) = teilbar(y,0) f(x + 1,y) = f
 Was gibt der Funktionswert f(x,y) an? Geben Sie ein LOOP-Programm an, das die Funktion f berechnet.
 
 ```{r, tidy=FALSE, eval=FALSE, highlight=FALSE }
-x_1 := x_1 + 1; 
-x_2 := x_2 + 0; 
-
-
+x_1 := x_1 + 1;			//x
+x_2 := x_2 + 0; 		//y
 
 LOOP x_1 DO 
 	IF x_1  != 0  THEN 
@@ -43,7 +41,20 @@ END
 #### 2)
  Die Funktion g : N2 →N sei deﬁniert als g(x,y) = kleiner(f(x,x),y), wobei f die Funktion aus der vorherigen Aufgabe ist. Welche Funktion wird von µ(g) berechnet? Geben Sie hierf¨ur den Typ an und erkl¨aren Sie, was der Funktionswert ist (hierbei soll nat¨urlich nicht einfach nur die Deﬁnition des µ-Operators eingesetzt werden, sondern eine umgangssprachliche Beschreibung samt Begr¨undung gegeben werden). Schreiben Sie ein WHILE-Programm, das die Funktion µ(g) berechnet. Hinweis: Sie k¨onnen hierf¨ur annehmen, dass Pf ein LOOP-Programm zur Berechnung von f ist. Sie d¨urfen die Zuweisung xi := Pf(xj,x`) verwenden (die Werte in xj und x` sind hier die Eingaben) und davon ausgehen, dass in Pf keine Variablen vorkommen, die in Ihrem Programm verwendet werden.
 
+ 
+```{r, tidy=FALSE, eval=FALSE, highlight=FALSE }
+x_1 := x_1 + 0;			//x
+x_2 := x_2 + 0; 		//y
+x_3 := Pf(x_2,x_2);
 
+WHILE x_3 < x_1 DO
+	x_2 ++;
+	x_3 := Pf(x_2, x_2);
+
+END WHILE	
+ 
+```
+ 
 ### Aufgabe 2. Kurzesten WHILE programme 
 
 ___
