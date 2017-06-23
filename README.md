@@ -39,7 +39,7 @@ END
 ```	
 
 #### 2)
- Die Funktion g : N2 →N sei deﬁniert als g(x,y) = kleiner(f(x,x),y), wobei f die Funktion aus der vorherigen Aufgabe ist. Welche Funktion wird von µ(g) berechnet? Geben Sie hierf¨ur den Typ an und erkl¨aren Sie, was der Funktionswert ist (hierbei soll nat¨urlich nicht einfach nur die Deﬁnition des µ-Operators eingesetzt werden, sondern eine umgangssprachliche Beschreibung samt Begr¨undung gegeben werden). Schreiben Sie ein WHILE-Programm, das die Funktion µ(g) berechnet. Hinweis: Sie k¨onnen hierf¨ur annehmen, dass Pf ein LOOP-Programm zur Berechnung von f ist. Sie d¨urfen die Zuweisung xi := Pf(xj,x`) verwenden (die Werte in xj und x` sind hier die Eingaben) und davon ausgehen, dass in Pf keine Variablen vorkommen, die in Ihrem Programm verwendet werden.
+ Die Funktion g : N2 →N sei deﬁniert als g(x,y) = kleiner(f(x,x),y), wobei f die Funktion aus der vorherigen Aufgabe ist. Welche Funktion wird von µ(g) berechnet?
 
  
 ```{r, tidy=FALSE, eval=FALSE, highlight=FALSE }
