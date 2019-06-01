@@ -11,7 +11,13 @@ html{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 body {
+    background-image: url("../img/grayscale_background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: #333;
     margin: 0px;
     overflow: hidden;
@@ -68,4 +74,67 @@ a:hover{
         width: 100%;
         float: none;
     }
+
+    .mainvideo {
+        width: 300px;
+        height: 200px;
+
+    }
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
+}
+
+
+.mainvideo {
+    border: white 7px solid;
+    width: 40vw;
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.links a {
+    font-size: 20px;
+    color: #fff;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.links a:hover {
+    color: rgba(0,0,0,0.7);
+}
+
+.overlay-desc {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme {
+    font: -webkit-mini-control;
+    font-size: large;
+    background-color: #3c3c3c;
 }
