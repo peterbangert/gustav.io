@@ -63,24 +63,6 @@ a:hover{
     padding: 0 1rem;
     margin: 1rem 0;
 }
-@media screen and (max-width: 768px){
-    html{
-        font-size: 18px;
-        line-height: 20px;
-    }
-    .col{
-        padding: 0 1rem;
-        margin: 1rem 0;
-        width: 100%;
-        float: none;
-    }
-
-    .mainvideo {
-        width: 300px;
-        height: 200px;
-
-    }
-}
 
 .centered {
     position: fixed;
@@ -145,4 +127,31 @@ a:hover{
     -moz-transition: background-color 0.3s ease;
     -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .col{
+        padding: 0 1rem;
+        margin: 1rem 0;
+        width: 100%;
+        float: none;
+    }
+
+    .mainvideo {
+        width: 100vw;
+
+    }
+    .aboutme {
+        font-size: small;
+        overflow: auto;
+        width: 100vw;
+        height: 75vw;
+
+    }
+
 }
