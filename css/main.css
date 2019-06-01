@@ -90,6 +90,9 @@ a:hover{
     transform: translate(-50%, -50%);
 
 }
+.aboutme:hover {
+    background-color: rgba(0,0,0,0.3);
+}
 
 
 .mainvideo {
@@ -134,7 +137,12 @@ a:hover{
     justify-content: center;
 }
 .aboutme {
+    padding: 20px;
     font: -webkit-mini-control;
     font-size: large;
     background-color: #3c3c3c;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
