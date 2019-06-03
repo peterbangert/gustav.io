@@ -13,7 +13,7 @@ html{
 }
 
 body {
-    background-image: url("../img/grayscale_background.jpg");
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -78,7 +78,7 @@ a:hover{
 
 
 .mainvideo {
-    border: white 7px solid;
+    border: white 5px solid;
     width: 40vw;
 }
 
@@ -129,6 +129,12 @@ a:hover{
     transition: background-color 0.3s ease;
 }
 
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("../img/grayscale_background.jpg");
+    }
+}
+
 
 @media screen and (max-width: 768px){
     html{
@@ -153,5 +159,7 @@ a:hover{
         height: 75vw;
 
     }
-
+    body {
+        background-image: url("../img/background_mobile_grayscale.png");
+    }
 }
