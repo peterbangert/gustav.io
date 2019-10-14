@@ -18,42 +18,48 @@
     <div class="aboutme">
         <h1 id="peterslinuxcommands">Linux Commands I often forget</h1>
 
-<h2 id="grepcommandiwant">grep command I want</h2>
+<h4 id="grepcommandiwant">grep command I want</h4>
 
 <p><code>grep -nr 'str' .</code></p>
 
-<h2 >remove command I want</h2>
+<h4 >remove command I want</h4>
 
 <p><code>rm -rfv dir/</code></p>
 
-<h2 id="listpartitions">List partitions</h2>
+<h4 id="listpartitions">List partitions</h4>
 
 <p><code>fdisk -l</code></p>
 
-<h2 id="showlisteningportstcpandudp">Show listening ports, tcp and udp</h2>
+<h4 id="showlisteningportstcpandudp">Show listening ports, tcp and udp</h4>
 
 <p><code>netstat -tlnup</code></p>
 
-<h2 id="addusertosudogroup">Add user to sudo group</h2>
+<h4 id="addusertosudogroup">Add user to sudo group</h4>
 
 <p><code>usermod -aG sudo username</code></p>
 
 
-<h2 id="showallnetworkdevicesupordown">Show all network devices up or down</h2>
+<h4 id="showallnetworkdevicesupordown">Show all network devices up or down</h4>
 
 <p><code>ifconfig -a</code></p>
 
-<h2 id="findipofaserver">Find ip of a server</h2>
+<h4 id="findipofaserver">Find ip of a server</h4>
 
 <p><code>nslookup www.x.com</code></p>
 
-<h2 id="assignip">Assign IP</h2>
 
-<h3 id="withifconfig">With ifconfig</h3>
+<h4 >Free disk space</h4>
+
+<p><code>df</code></p>
+
+
+<h4 id="assignip">Assign IP</h4>
+
+<h4 id="withifconfig">With ifconfig</h4>
 
 <p><code>ifconfig eth0 &lt;ip_addr&gt; broadcast &lt;broadcast&gt; netmask &lt;netmask&gt; up</code></p>
 
-<h3 id="withdhcp">With DHCP</h3>
+<h4 id="withdhcp">With DHCP</h4>
 
 <p><code>sudo dhclient -r eth0
 dhclient eth0</code></p>
