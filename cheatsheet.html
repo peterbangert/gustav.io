@@ -18,60 +18,75 @@
     <div class="cheatsheet">
         <h1 id="peterslinuxcommands">Linux Commands I often forget</h1>
 
-<h4 id="grepcommandiwant">grep command I want</h4>
+<h3 id="grepcommandiwant">grep command I want</h3>
 
 <p><code>grep -nr 'str' .</code></p>
 
-<h4 >remove command I want</h4>
+<h3 >remove command I want</h3>
 
 <p><code>rm -rfv dir/</code></p>
 
+<h3 id="gitsquish">Squash Commits into one</h3>
 
-<h4 id="netcat">netcat commands I want</h4>
+<p><code>git reset --soft HEAD~n </code></p>
+
+
+<p><code>git push --force-with-lease </code></p>
+
+
+<h3 id="pid">Process Finder I want</h3>
+
+<p><code>ps aux | grep -i nfs </code></p>
+
+
+
+
+
+<h3 id="netcat">netcat commands I want</h3>
 
 <p><code>nc -l -p 1234 < 6VFRhAAQhzA8R3tL.mp4</code></p>
 
 <p><code>nc 192.168.9.130  1234 > out.mp4 | mpv out.mp4</code></p>
 
-<h4 id="listpartitions">List partitions</h4>
+<h3 id="listpartitions">List partitions</h3>
 
 <p><code>fdisk -l</code></p>
 
-<h4 id="showlisteningportstcpandudp">Show listening ports, tcp and udp</h4>
+<h3 id="showlisteningportstcpandudp">Show listening ports, tcp and udp</h3>
 
 <p><code>netstat -tlnup</code></p>
 
-<h4 id="addusertosudogroup">Add user to sudo group</h4>
+<h3 id="addusertosudogroup">Add user to sudo group</h3>
 
 <p><code>usermod -aG sudo username</code></p>
 
 
-<h4 id="showallnetworkdevicesupordown">Show all network devices up or down</h4>
+<h3 id="showallnetworkdevicesupordown">Show all network devices up or down</h3>
 
 <p><code>ifconfig -a</code></p>
 
-<h4 id="findipofaserver">Find ip of a server</h4>
+<h3 id="findipofaserver">Find ip of a server</h3>
 
 <p><code>nslookup www.x.com</code></p>
 
 
-<h4 >Free disk space</h4>
+<h3 >Free disk space</h3>
 
 <p><code>df</code></p>
 
 
-<h4 id="assignip">Assign IP</h4>
+<h3 id="assignip">Assign IP</h3>
 
-<h4 id="withifconfig">With ifconfig</h4>
+<h3 id="withifconfig">With ifconfig</h3>
 
 <p><code>ifconfig eth0 &lt;ip_addr&gt; broadcast &lt;broadcast&gt; netmask &lt;netmask&gt; up</code></p>
 
-<h4 id="withdhcp">With DHCP</h4>
+<h3 id="withdhcp">With DHCP</h3>
 
 <p><code>sudo dhclient -r eth0
 dhclient eth0</code></p>
 
-<h4 id="nfsserver">Setup NFS server</h4>
+<h3 id="nfsserver">Setup NFS server</h3>
 
 <p><code>sudo apt-get install nfs-kernel-server</code></p>
 
@@ -84,11 +99,16 @@ dhclient eth0</code></p>
 <p><code>Restart nfs-kernel-server</code></p>
 
 
-<h4 id="nfsclient">Setup NFS Client</h4>
+<h3 id="nfsclient">Setup NFS Client</h3>
 
 <p><code>sudo apt-get install nfs-common</code></p>
 
 <p><code>mount serverIP:/path/to/share/dir  /path/to/your/dir</code></p>
+
+
+<h3 id="nfsunmount">Unmount NFS Client</h3>
+
+<p><code>sudo umount -f -l path/to/mountdir </code></p>
 
     </div>
 
