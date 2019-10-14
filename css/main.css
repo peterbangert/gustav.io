@@ -173,6 +173,13 @@ a:hover{
         height: 75vw;
 
     }
+    .cheatsheet {
+        font-size: small;
+        overflow: auto;
+        width: 100vw;
+        height: 50vw;
+
+    }
     body {
         background-image: url("../img/background_mobile_grayscale.png");
     }
