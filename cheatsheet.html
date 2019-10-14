@@ -26,6 +26,13 @@
 
 <p><code>rm -rfv dir/</code></p>
 
+
+<h4 id="netcat">netcat commands I want</h4>
+
+<p><code>nc -l -p 1234 < 6VFRhAAQhzA8R3tL.mp4</code></p>
+
+<p><code>nc 192.168.9.130  1234 > out.mp4 | mpv out.mp4</code></p>
+
 <h4 id="listpartitions">List partitions</h4>
 
 <p><code>fdisk -l</code></p>
@@ -64,6 +71,31 @@
 <p><code>sudo dhclient -r eth0
 dhclient eth0</code></p>
     </div>
+
+<h4 id="nfsserver">Setup NFS server</h4>
+
+<p><code>sudo apt-get install nfs-kernel-server</code></p>
+
+<p><code>Edit /etc/exports with share/dir &lt;ip_addr&gt;</code></p>
+
+<p><code>Edit /etc/hosts.denz with portmap:ALL</code></p>
+
+<p><code>sudo exportfs -a</code></p>
+
+<p><code>Restart nfs-kernel-server</code></p>
+
+
+<h4 id="nfsclient">Setup NFS Client</h4>
+
+<p><code>sudo apt-get install nfs-common</code></p>
+
+<p><code>mount serverIP:/path/to/share/dir  /path/to/your/dir</code></p>
+
+
+
+    </div>
+
+
 
 
 </div>
