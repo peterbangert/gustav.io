@@ -129,6 +129,20 @@ a:hover{
     transition: background-color 0.3s ease;
 }
 
+
+.cheatsheet {
+    overflow: auto;
+    height: 50vw;
+    padding: 20px;
+    font: -webkit-mini-control;
+    font-size: large;
+    background-color: #3c3c3c;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
 @media screen and (min-width: 768px) {
     body {
         background-image: url("../img/grayscale_background.jpg");
