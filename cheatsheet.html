@@ -40,6 +40,12 @@
 
 
 
+<h3 id="sslnc">Openssl netcat</h3>
+
+
+<p><code>cat /var/log/messages | openssl enc -aes256 | nc storage-1 5110</code></p>
+
+<p><code>nc -l -p 5110 | openssl enc -d -aes256 > messages</code></p>
 
 
 <h3 id="netcat">netcat commands I want</h3>
