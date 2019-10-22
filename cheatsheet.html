@@ -42,6 +42,18 @@
 
 <p><code>type </code></p>
 
+<h3 id="genkernelreconfig">Reconfigure Gentoo Kernel</h3>
+
+<p><code>cd /usr/src/linux </code></p>
+<p><code>make menuconfig </code></p>
+<p><code>make andand make modules_install </code></p>
+<p><code>mount /boot </code></p>
+<p><code>cp arch/my_arch/boot/bzImage /boot/bzImage-x.x.xx-gentoo </code></p>
+<p><code> reboot </code></p>
+
+
+
+
 <h3 id="sslnc">Openssl netcat</h3>
 
 
